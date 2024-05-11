@@ -29,6 +29,7 @@ export const App = () => {
     >
       <ContactForm>
         {isLoading && !error && <b>Request in progress...</b>}
+        {error && <b>There was an error</b>}
         <ContactList>
           <Filter />
         </ContactList>
